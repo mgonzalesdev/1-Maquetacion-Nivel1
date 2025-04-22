@@ -394,3 +394,149 @@ footer {
 .social-links a {
     padding-inline: 1rem;
 }
+
+
+@media screen and (min-width: 600px) {
+    .header,
+    .main,
+    .footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .section-bookmark {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .section-img,
+    .section-content {
+        flex: 1;
+    }
+
+    .section>div {
+
+        padding-block: 1rem;
+        padding-inline: 2rem;
+    }
+
+    .section-content {
+        text-align: left;
+    }
+
+    .section-description {
+        width: 50%;
+        margin: 0 auto;
+        padding-top: 1rem;
+    }
+
+    .btns {
+        padding-inline: unset;
+        justify-content: flex-start;
+    }
+
+    .tab {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .tab button {
+        border-top: none;
+        border-bottom: 2px solid var(--grey);
+        padding-inline: 4rem;
+    }
+
+    .tab-selected::after {
+        width: 100%;
+    }
+
+    .tabcontent-open {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .tabcontent-img,
+    .tabcontent-text {
+        flex: 1;
+    }
+
+    .tabcontent-text {
+        text-align: left;
+    }
+
+    .tabcontent-text button {
+        margin-block-start: 2rem;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .cards>div:nth-child(2) {
+        position: relative;
+        top: 2rem;
+    }
+
+    .cards>div:nth-child(3) {
+        position: relative;
+        top: 4rem;
+    }
+
+    .btn-menu {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: unset;
+
+    }
+
+    .navbar-list {
+        width: initial;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 2rem;
+        padding: 0;
+    }
+
+    .navbar-list li {
+        border: none;
+    }
+
+    .navbar-list li a {
+        color: unset;
+    }
+
+    .navbar-list li a:hover {
+        color: var(--red);
+    }
+
+    .footer {
+        flex-direction: row;
+        padding: 2rem;
+    }
+
+    .footer ul {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .social-links {
+        width: auto;
+        margin-left: auto;
+    }
+
+    .form-contact {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}
