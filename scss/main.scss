@@ -1,87 +1,108 @@
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/buttons";
+
 
 $primary: #5265E1;
 $danger: #FA5959;
 $custom-blue: #252B46;
 $custom-grey: #9194a1;
 
-$theme-colors: (
-  "primary": $primary,
-  "danger": $danger
-);
-
 $custom-colors: (
-  "custom-color-blue": #252B46
+  "primary":$primary,
+  "danger":$danger
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
+$min-contrast-ratio: 3;
+
+//Navbar custom
+$navbar-light-toggler-icon-bg: url(../img/icon-hamburger.svg);
+$navbar-light-color: $black;
+$navbar-light-hover-color: $danger;
+$navbar-light-toggler-border-color: none;
+$navbar-toggler-focus-width: 0;
 
 
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@mixin border($style, $color, $borderWidth, $side) {
+  @if $side ==all {
+    border: $style $color $borderWidth;
+  }
+
+  @else {
+    border-#{$side}: $style $color $borderWidth;
+  }
+}
+
+.main {
+  overflow-x: hidden;
+}
+
+.btn-primary {
+  &:hover {
+    background-color: $white;
+    color: $primary;
+    border-width: 2px;
+
+  }
+}
+
+.btn-outline-primary {
+  &:hover {
+    background-color: $white;
+    color: $gray-800;
+    @include border(solid, $gray-600, 2px, all);
+  }
+}
+
+.btn-danger {
+  &:hover {
+    color: $danger;
+    background-color: $white;
+    @include border(solid, $danger, $border-width, all);
+  }
+}
+
+.navbar-toggler-icon {
+  background-size: auto;
+}
 
 .menu-movil {
-  background-color: #252B46;
+  background-color: $custom-blue;
   opacity: 0.9;
   height: 100vh;
   position: fixed;
   width: 100%;
-}
+  z-index: 10;
 
-//Navbar custom
-$navbar-light-toggler-icon-bg: url(../img/icon-hamburger.svg);
-// $navbar-light-toggler-icon-bg: no-repeat url(../img/icon-hamburger.svg);
-// $navbar-dark-toggler-icon-bg: none;
-// $navbar-inverse-toggler-bg: url(../img/icon-hamburger.svg);
+  .nav-item {
+    @include border(solid, $custom-grey, $border-width, top);
+  }
 
-// $navbar-dark-toggler-icon-bg: none;
-$navbar-light-color: #fff;
-$navbar-light-hover-color: $danger;
-$navbar-light-active-color: #14cf1b;
+  .nav-link {
+    color: $white;
 
-$navbar-light-toggler-border-color: none;
-$navbar-light-brand-color: rgb(219, 201, 41);
-$navbar-light-brand-hover-color: green;
-$navbar-toggler-focus-width: 0;
+    &:hover {
+      color: $danger;
+    }
+  }
 
-//$active-bg-color: darken($custom-blue, 10%);
-$btn-link-color:red;
-
-
-.nav-link {
-  &:hover {
-    //background-color: $active-bg-color;
+  .navbar-toggler-icon {
+    background-image: url(../img/icon-close.svg);
   }
 }
 
-@import "../node_modules/bootstrap/scss/bootstrap";
-
-.navbar-collapse {
-  //position: relative;
-}
-
-.navbar-nav {
-  // position: absolute;
-  //   width: 100%;
-}
-
-.nav-item {
-  // border-top: 1px solid $custom-grey;
-  // &:last-of-type {
-  //   border-bottom: 1px solid $custom-grey;
-  // }
-}
-.navbar-toggler-icon{
-  background-size: auto;
-}
-
-.bg-icon {
-  background-image: url(../img/icon-close.svg);
-  background-size: auto;
-}
-
-@media (min-width: 992px) {
-  .nav-link   {      
-      color: $black;
+.nav {
+  .nav-item {
+    @include border(solid, $gray-300, $border-width, bottom);
+    justify-items: center;
   }
+
+  .nav-link.active {
+    @include border(solid, $danger, 2px, bottom);
+  }
+
 }
