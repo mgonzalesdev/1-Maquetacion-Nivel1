@@ -3,7 +3,6 @@
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/buttons";
 
-
 $primary: #5265E1;
 $danger: #FA5959;
 $custom-blue: #252B46;
@@ -23,6 +22,36 @@ $navbar-light-color: $black;
 $navbar-light-hover-color: $danger;
 $navbar-light-toggler-border-color: none;
 $navbar-toggler-focus-width: 0;
+
+//Tabs custom
+$nav-link-color: $custom-grey ;
+$nav-link-hover-color: $danger;
+$nav-pills-border-radius: none;
+$nav-tabs-border-color: $custom-grey;
+$nav-tabs-link-hover-border-color: $white;
+$nav-tabs-link-active-border-color: $white $white $danger;
+
+$nav-pills-link-active-color: $black;
+$nav-pills-link-active-bg: $white;
+$nav-tabs-link-active-border-color: $danger;
+
+//// Accordion
+$accordion-button-active-bg: $white;
+$accordion-button-active-color: $danger;
+$accordion-button-focus-box-shadow: none;
+$accordion-icon-color: $danger;
+$accordion-icon-active-color: $danger;
+$accordion-button-icon: url(../img/icon-arrow.svg);
+$accordion-button-active-icon: url(../img/icon-arrow.svg);
+
+// List group
+$list-group-action-color: $white;
+$list-group-hover-bg: none;
+$list-group-action-hover-color: $danger;
+
+//card
+$card-border-width: 0;
+$card-border-color: none;
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -105,4 +134,59 @@ $navbar-toggler-focus-width: 0;
     @include border(solid, $danger, 2px, bottom);
   }
 
+}
+
+.cards {
+  min-height: 28rem;
+
+  .card-footer {
+    background-image: url(../img/bg-dots.svg);
+    background-repeat: no-repeat;
+    background-color: initial;
+    background-size: contain;
+    border: none;
+  }
+}
+
+.footer {
+  background-color: $custom-blue;
+
+  .list-group-item {
+    border: none;
+    background: none;
+  }
+}
+
+.section-img,
+.tab-pane-img {
+  position: relative;
+}
+
+@mixin background-blue() {
+  content: '';
+  position: absolute;
+  background-color: $primary;
+  width: 1000px;
+  z-index: -1;
+  height: 80%;
+}
+
+.tab-pane-img {
+  &:after {
+    @include background-blue();
+    top: 30%;
+    right: 20%;
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+  }
+}
+
+.section-img {
+  &:after {
+    @include background-blue();
+    bottom: 0;
+    left: clamp(50px, 10vw, 150px);
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+  }
 }
