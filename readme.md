@@ -15,9 +15,9 @@ Bootstrap 5 y SASS para generar los estilos CSS.
 * Editor de codigo(Visual Studio Code)
 
 ## 🛠️ Instalación
-* Descarga el codigo del branch master.
-* Instalar boostrap utilizando npm install.
-* 
+* Descarga el codigo del branch main.
+* Verificar que tienes instalado node.js y que npm este iniciado, esto permitira la instalación del paquete de boostrap.
+* Instalar boostrap v5.3: desde la interfaz de línea de comandos, dirigirse al directorio del proyecto y ejecutar "npm install bootstrap" esto descargará el paquete node_modules en el proyecto.
 
 ## ▶️ Ejecución
 * Acceder a la carpeta del proyecto.
