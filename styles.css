@@ -183,8 +183,8 @@ li a:hover,
     content: '';
     position: absolute;
     bottom: 0;
-    left: clamp(50px, 10vw, 150px);
-    width: 80%;
+    right: -20%;
+    width: 100%;
     height: 80%;
     background-color: var(--primary-color);
     border-top-left-radius: 9999px;
@@ -200,8 +200,8 @@ li a:hover,
     content: '';
     position: absolute;
     top: 30%;
-    left: 0px;
-    width: 80%;
+    left: -30%;
+    width: 110%;
     height: 85%;
     background-color: var(--primary-color);
     border-top-right-radius: 9999px;
@@ -397,6 +397,7 @@ footer {
 
 
 @media screen and (min-width: 600px) {
+
     .header,
     .main,
     .footer {
@@ -539,4 +540,7 @@ footer {
         justify-content: center;
     }
 
+    .section-img::after {
+        /* left: clamp(50px, 10vw, 150px); */
+    }
 }
