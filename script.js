@@ -11,7 +11,7 @@ function openTab(event, tabId) {
     }
     document.getElementById(tabId).classList.remove("hidden");
     document.getElementById(tabId).classList.add("tabcontent-open");
-    event.currentTarget.className += " tab-selected";
+    event.currentTarget.classList.add("tab-selected");
 
 }
 const btnMenu = document.getElementById("btn-menu");
@@ -34,13 +34,13 @@ function updateMenu() {
     document.getElementById("social-links").setAttribute('data-visible', visible);
     if (visible == "false") {
         logo.setAttribute("src", "img/logo-bookmark.svg");
-        navbar.classList.remove('movilmenu');
+        navbar.classList.remove('mobile-menu');
         btnLogin.classList.remove('btn-login-movil');
-        btnLogin.classList.add("btn-red");
+        btnLogin.classList.add("btn--secondary");
     } else {
         logo.setAttribute("src", "img/logo-bookmark-white.svg");
-        navbar.classList.add('movilmenu');
-        btnLogin.classList.remove("btn-red");
+        navbar.classList.add('mobile-menu');
+        btnLogin.classList.remove("btn--secondary");
         btnLogin.classList.add('btn-login-movil');
     }
 }

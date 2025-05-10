@@ -26,7 +26,8 @@ img {
 }
 
 ul {
-    list-style-type: none;
+    list-style: none;
+
 }
 
 h1,
@@ -96,7 +97,7 @@ input {
 
 }
 
-.movilmenu {
+.mobile-menu {
     width: 100%;
     z-index: 10;
     position: fixed;
@@ -217,12 +218,12 @@ li a:hover,
 }
 
 
-.btn-primary {
+.btn--primary {
     background-color: var(--primary-color);
     color: var(--white);
 }
 
-.btn-red {
+.btn--secondary {
     background-color: var(--red);
     color: var(--white);
 }
@@ -231,12 +232,12 @@ li a:hover,
     background-color: var(--white);
 }
 
-.btn-primary:hover {
+.btn--primary:hover {
     box-shadow: 0 0 0 2px var(--primary-color);
     color: var(--primary-color);
 }
 
-.btn-red:hover {
+.btn--secondary:hover {
     color: var(--red);
     box-shadow: 0 0 0 2px var(--red);
 }
@@ -292,9 +293,9 @@ li a:hover,
 .card {
     box-shadow: 0 5px 15px 1px rgb(from var(--grey) r g b / 0.3);
     border-radius: 15px;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin-top: 2rem;   
     flex: 1;
+    max-height: max-content;
 }
 
 .card img {
@@ -478,14 +479,12 @@ footer {
         gap: 2rem;
     }
 
-    .cards>div:nth-child(2) {
-        position: relative;
-        top: 2rem;
+    .mt-4 {
+        margin-top: 4rem;
     }
 
-    .cards>div:nth-child(3) {
-        position: relative;
-        top: 4rem;
+    .mt-8 {
+        margin-top: 8rem;
     }
 
     .btn-menu {
