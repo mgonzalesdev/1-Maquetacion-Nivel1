@@ -23,4 +23,3 @@ Abrir el proyecto con un editor de codigo.
 Acceder a la carpeta del proyecto.  
 Para previsualizar la pagina en un navegador abre el archivo index.html.  
 Otra opcion para visualizar es utilizando la extension "Live server" de Visual Studio.
-img[alt=Flowers] { float: right; }
