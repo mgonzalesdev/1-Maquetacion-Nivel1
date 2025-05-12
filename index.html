@@ -7,26 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookmark</title>
     <link rel="stylesheet" href="scss/main.css">
-
 </head>
 
 <body>
     <header class="header" id="header">
         <div class="container ">
-            <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+            <nav id="navbar" class="navbar navbar-expand-lg navbar-light" aria-label="Main">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img id="logo" src="img/logo-bookmark.svg" alt="Logo bookmark">
                     </a>
                     <button id="btn-menu" class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                        data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
+                        aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon" id="icon-menu"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse" id="navbarMenu">
                         <ul class="navbar-nav ms-auto mb-lg-0">
                             <li class="nav-item p-3">
-                                <a class="nav-link text-center" aria-current="page" href="#features">FEATURES</a>
+                                <a class="nav-link text-center" href="#features">FEATURES</a>
                             </li>
                             <li class="nav-item p-3">
                                 <a class="nav-link text-center" href="#pricing">PRICING</a>
@@ -39,9 +38,11 @@
                             </li>
                         </ul>
                         <ul class="nav navbar-nav d-flex flex-row justify-content-center d-lg-none">
-                            <li class="m-3"><a href="#"><img src="img/icon-facebook.svg" alt="Icono Facebook"></a>
+                            <li class="m-3"><a href="#"><img src="img/icon-facebook.svg" alt="Icono Facebook"
+                                        aria-label="Facebook"></a>
                             </li>
-                            <li class="m-3"><a href="#"><img src="img/icon-twitter.svg" alt="Icono Twitter"></a>
+                            <li class="m-3"><a href="#"><img src="img/icon-twitter.svg" alt="Icono Twitter"
+                                        aria-label="Twitter"></a>
                             </li>
                         </ul>
                     </div>
@@ -50,12 +51,12 @@
         </div>
     </header>
     <main class="main">
-        <section class="container py-4" aria-label="Bookmark Manager">
+        <section class="container py-5" aria-label="Bookmark Manager">
             <div class="row flex-md-row-reverse align-items-md-center">
-                <div class="col-sx-12 col-sm-12 col-md-6 col-lg-6 section-img">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 section-img">
                     <img class="img-fluid " src="img/illustration-hero.svg" alt="Bookmark Manager">
                 </div>
-                <div class="col-sx-12 col-sm-12 col-md-6 col-lg-6 text-lg-start text-center ">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-lg-start text-center ">
                     <h1>A Simple Bookmark Manager</h1>
                     <p>A clean and simple interface to organize your favourite websites.
                         Open a new browser tab and see your sites load instantly.
@@ -67,7 +68,7 @@
                 </div>
             </div>
         </section>
-        <section id="features" class="container py-4" aria-label="Features">
+        <section class="container py-5" id="features" aria-label="Features">
             <div class="row justify-content-center">
                 <h2 class="text-center">Features</h2>
                 <p class="text-center col-lg-6 mt-3">Our aim is to make it quick and easy for you to access your
@@ -76,7 +77,7 @@
                     Your bookmarks sync between your devices so you can access them on the go.
                 </p>
             </div>
-            <nav class="row">
+            <nav class="row" aria-label="Tabs">
                 <ul class="nav nav-pills mt-3 mb-5 justify-content-center" id="pills-tab" role="tablist">
                     <li class="nav-item col-12 col-lg-3" role="presentation">
                         <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
@@ -98,11 +99,11 @@
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                     <div class="row align-items-md-center ">
-                        <div class="col-sx-12 col-sm-12 col-md-6 col-lg-6 tab-pane-img">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-5 tab-pane-img">
                             <img class="img-fluid tab-img" src="img/illustration-features-tab-1.svg" alt>
                         </div>
                         <div
-                            class="col-sx-12 col-sm-12 col-md-6 col-lg-6 text-lg-start text-center mt-4 mt-sm-4 mt-md-5 mt-lg-0">
+                            class="col-12 col-sm-12 col-md-6 col-lg-6 text-lg-start text-center mt-4 mt-sm-4 mt-md-5 mt-lg-0">
                             <h3>Bookmark in one click</h3>
                             <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives
                                 you complete control over how you manage your favourite sites.
@@ -113,11 +114,11 @@
                 </div>
                 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                     <div class="row align-items-md-center">
-                        <div class="col-sx-12 col-sm-12 col-md-6 col-lg-6 tab-pane-img">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-5 tab-pane-img ">
                             <img class="img-fluid tab-img" src="img/illustration-features-tab-2.svg" alt>
                         </div>
                         <div
-                            class="col-sx-12 col-sm-12 col-md-6 col-lg-6 text-lg-start text-center mt-4 mt-sm-4 mt-md-5 mt-lg-0">
+                            class="col-12 col-sm-12 col-md-6 col-lg-6 text-lg-start text-center mt-4 mt-sm-4 mt-md-5 mt-lg-0">
                             <h3>Intelligent search</h3>
                             <p>Our powerful search feature will help you find saved sites in no time al all. No need to
                                 trawl
@@ -128,11 +129,11 @@
                 </div>
                 <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                     <div class="row align-items-md-center">
-                        <div class="col-sx-12 col-sm-12 col-md-6 col-lg-6 tab-pane-img">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-5 tab-pane-img">
                             <img class="img-fluid tab-img" src="img/illustration-features-tab-3.svg" alt>
                         </div>
                         <div
-                            class="col-sx-12 col-sm-12 col-md-6 col-lg-6 text-lg-start text-center mt-4 mt-sm-4 mt-md-5 mt-lg-0">
+                            class="col-12 col-sm-12 col-md-6 col-lg-6 text-lg-start text-center mt-4 mt-sm-4 mt-md-5 mt-lg-0">
                             <h3>Share your bookmarks</h3>
                             <p>Easy share your bookmarks and collections with others. Create a shareable link that you
                                 can send at
@@ -143,7 +144,7 @@
                 </div>
             </div>
         </section>
-        <section id="pricing" class="container py-4" aria-label="Download the extension">
+        <section class="container py-5" id="pricing" aria-label="Download the extension">
             <div class="row justify-content-center">
                 <h2 class="text-center">Download the extension</h2>
                 <p class="text-center col-lg-6 ">We've got more browsers in the pipeline. Please do let us
@@ -152,7 +153,7 @@
                     prioritize.</p>
             </div>
             <div class="row cards justify-content-center">
-                <div class="col col-sx-10 col-sm-10 col-md-6 col-lg-3 text-center align-self-start my-3 my-lg-0">
+                <div class="col col-10 col-sm-6 col-md-6 col-lg-3 text-center align-self-start my-3 my-lg-0">
                     <div class="card shadow">
                         <div class="card-body">
                             <img src="img/logo-chrome.svg" class="m-5" alt="Logo chrome">
@@ -164,7 +165,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-sx-10 col-sm-10 col-md-6 col-lg-3 text-center align-self-center my-3 my-lg-0">
+                <div class="col col-10 col-sm-6 col-md-6 col-lg-3 text-center align-self-center my-3 my-lg-0">
                     <div class="card shadow">
                         <div class="card-body">
                             <img src="img/logo-firefox.svg" class="m-5" alt="Logo Firefox">
@@ -176,7 +177,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-sx-10 col-sm-10 col-md-6 col-lg-3 text-center align-self-end my-3 my-lg-0">
+                <div class="col col-10 col-sm-6 col-md-6 col-lg-3 text-center align-self-end my-3 my-lg-0">
                     <div class="card shadow">
                         <div class="card-body">
                             <img src="img/logo-opera.svg" class="m-5" alt="Logo Opera">
@@ -190,7 +191,7 @@
                 </div>
             </div>
         </section>
-        <section class="container py-4" aria-label="Frequently Asked Questions">
+        <section class="container py-5" aria-label="Frequently Asked Questions">
             <div class="row justify-content-center">
                 <h2 class="text-center">Frequently Asked Questions</h2>
                 <div class="col-lg-6">
@@ -261,51 +262,61 @@
                 </div>
             </div>
         </section>
-    </main>
-    <section id="contact" class="container-fluid bg-primary text-center py-5" aria-label="Contact Us">
-        <div class="row text-white justify-content-center">
-            <div class="col col-lg-6 ">
-                <p class=""> 35,000 + ALREADY JOINED </p>
-                <h3 class="p-3">Stay up-to-date with what we're doing</h3>
-                <form class="row justify-content-center needs-validation" novalidate>
-                    <div class="col-auto position-relative">
-                        <label for="email" class="visually-hidden">Password</label>
-                        <input type="text" class="form-control" id="email" placeholder="Enter your email address"
-                            required>
-                        <div class="invalid-tooltip">
-                            Whoops, make sure it's an email
+        <section class="container-fluid bg-primary text-center py-5" id="contact" aria-label="Contact Us">
+            <div class="row text-white justify-content-center">
+                <div class="col col-lg-6 ">
+                    <p class=""> 35,000 + ALREADY JOINED </p>
+                    <h3 class="p-3">Stay up-to-date with what we're doing</h3>
+                    <form class="row justify-content-center needs-validation" novalidate>
+                        <div class="col-auto position-relative">
+                            <label for="email" class="visually-hidden"></label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email address"
+                                required>
+                            <div class="invalid-tooltip">
+                                Whoops, make sure it's an email
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-auto">
-                        <button class="btn btn-danger" type="submit">Contact Us</button>
-                    </div>
-                </form>
+                        <div class="col-auto">
+                            <button class="btn btn-danger" type="submit">Contact Us</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <footer class="footer">
         <div class="container py-3">
             <div class="d-flex flex-column flex-sm-column flex-md-column flex-lg-row align-items-center ">
                 <a href="#">
                     <img src="img/logo-bookmark-white.svg" alt="Logo Bookmark">
                 </a>
-                <div class="list-group list-group-horizontal-md list-group-horizontal-lg ms-lg-3 text-center">
-                    <a href="#features" class="list-group-item list-group-item-action">FEATURES</a>
-                    <a href="#pricing" class="list-group-item list-group-item-action">PRICING</a>
-                    <a href="#contact" class="list-group-item list-group-item-action">CONTACT</a>
-                </div>
+                <nav class="navbar navbar-expand-sm ms-lg-3" aria-label="Footer">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-lg-3">
+                            <a class="nav-link" href="#features">FEATURES</a>
+                        </li>
+                        <li class="nav-item mx-lg-3">
+                            <a class="nav-link" href="#pricing">PRICING</a>
+                        </li>
+                        <li class="nav-item mx-lg-3">
+                            <a class="nav-link" href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
                 <div class="d-flex  ms-lg-auto">
-                    <a class="p-2" href="#" aria-label="Facebook" target="_blank">
+                    <a class="p-2" href="#" aria-label="Facebook" target="_blank" aria-label="Facebook">
                         <img src="img/icon-facebook.svg" alt="Icono Facebook">
                     </a>
-                    <a class="p-2" href="#" aria-label="Twitter" target="_blank">
+                    <a class="p-2" href="#" aria-label="Twitter" target="_blank" aria-label="Twitter">
                         <img src="img/icon-twitter.svg" alt="Icono Twitter">
                     </a>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 

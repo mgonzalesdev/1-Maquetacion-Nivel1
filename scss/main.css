@@ -12428,9 +12428,11 @@ textarea.form-control-lg {
 .footer {
   background-color: #252B46;
 }
-.footer .list-group-item {
-  border: none;
-  background: none;
+.footer .nav-link {
+  color: #fff;
+}
+.footer .nav-link:hover {
+  color: #FA5959;
 }
 
 .section-img,

@@ -151,9 +151,12 @@ $card-border-color: none;
 .footer {
   background-color: $custom-blue;
 
-  .list-group-item {
-    border: none;
-    background: none;
+  .nav-link {
+    color: $white;
+
+    &:hover {
+      color: $danger;
+    }
   }
 }
 

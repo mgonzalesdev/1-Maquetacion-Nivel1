@@ -3,7 +3,7 @@ btnMenu.addEventListener("click", function () {
     updateMenu();
 });
 
-let menu = document.getElementById('navbarSupportedContent');
+let menu = document.getElementById('navbarMenu');
 menu.addEventListener("click", function () {
     let visible = btnMenu.getAttribute('aria-expanded');
     if (visible == "true") {
