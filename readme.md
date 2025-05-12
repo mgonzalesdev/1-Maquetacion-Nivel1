@@ -1,7 +1,7 @@
 # Tarea Sprint 1.2 Bootstrap & SASS
 ## 📄 Descripción - Construir una landing page con HTML, Bootstrap y Sass.
 Este proyecto consiste en crear una landing page de acuerdo al diseño indicado tanto para escritorio, como móvil y tableta utilizando 
-Bootstrap 5 y SASS para generar los estilos CSS. 
+Bootstrap 5 y SASS para generar los estilos CSS.  
 [<img src="design/desktop-design.jpg" width="180" alt="Diseño Escritorio" />](design/desktop-design.jpg)
 [<img src="design/mobile.svg" width="150" alt="Diseño Movil" />](design/mobile.svg)  
 [<img src="design/mobile-active-nav.jpg" width="150" alt="Menu Movil"/>](design/mobile-active-nav.jpg)
